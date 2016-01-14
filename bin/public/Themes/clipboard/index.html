@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>WebTerm</title>
+        <link rel="icon" type="image/png" href="img/favicon.png" />
+        <link rel="stylesheet" href="css/style.css">
+        <script src="socket.io/socket.io.js"></script>
+        <script src="/js/jquery.js"></script>
+        <script src="/js/term.js"></script>
+        <script src="/js/blm.js"></script>
+        <script src="/Themes/clipboard/copy.js"></script>
+        <script src="/Themes/clipboard/web-term.js"></script>
+
+        <link href="/Themes/clipboard/clipboard.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="menu">
+            <button class="hide"></button>
+            <button class="copy" title="copy"><img src="/img/pencil.svg"></button>
+            <div class="clipboard"></div>
+        </div>
+        <div class="container"></div>
+    </body>
+    <script>
+        $('button.hide').click(function(){
+            $('.menu').toggleClass('hide');
+        });
+    </script>
+</html>

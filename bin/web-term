@@ -74,7 +74,6 @@ var app = new Lien({
 
 // Add the route
 app.page.add("/", "index.html");
-app.page.add("/cb", "clipboard.html");
 app.page.add("/vs", "vertical-split.html");
 app.page.add("/hs", "horizontal-split.html");
 
@@ -83,6 +82,8 @@ app.page.add("/themes", "/Themes/index.html");
 app.page.add("/woo", "/Themes/woo/index.html");
 app.page.add("/run", "/Themes/woo/main.html");
 app.page.add("/doublerun", "/Themes/woo/terminals.html");
+
+app.page.add("/cb", "/Themes/clipboard/index.html");
 
 // Init Socket.IO
 app.io = SocketIO.listen(app._server, {
